@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://neet2028.org/sitemap.xml
