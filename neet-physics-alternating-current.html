@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternating Current for NEET: RMS Values and Circuit Analysis | NEETSuccess</title>
+  <meta name="description" content="Master AC circuits, RMS values, and impedance for NEET Physics. NCERT-grounded strategies with common mistakes and exam patterns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+  <style>
+    .article-hero { background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%); padding: 64px 0 48px; }
+    .article-hero h1 { color: #fff; font-size: clamp(1.6rem, 3.5vw, 2.4rem); line-height: 1.25; margin-bottom: 16px; }
+    .article-meta { color: rgba(255,255,255,0.55); font-size: 0.9rem; }
+    .article-meta span { margin-right: 20px; }
+    .article-body { max-width: 780px; margin: 0 auto; padding: 56px 24px; }
+    .article-body h2 { font-size: 1.4rem; font-weight: 700; color: #0C1B33; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #E8E9ED; }
+    .article-body h3 { font-size: 1.1rem; font-weight: 600; color: #1A2F52; margin: 28px 0 10px; }
+    .article-body p { color: #3a4257; line-height: 1.8; margin-bottom: 16px; font-size: 1.02rem; }
+    .article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 20px; }
+    .article-body li { color: #3a4257; line-height: 1.8; margin-bottom: 6px; font-size: 1rem; }
+    .highlight-box { background: #FFF6E0; border-left: 4px solid #E8A020; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+    .highlight-box strong { color: #b8860b; display: block; margin-bottom: 6px; }
+    .highlight-box p { margin: 0; color: #5a4a00; font-size: 0.95rem; }
+    .cta-box { background: linear-gradient(135deg, #0C1B33, #1A2F52); color: #fff; padding: 32px; border-radius: 12px; margin: 40px 0; text-align: center; }
+    .cta-box h3 { color: #E8A020; margin-bottom: 10px; font-size: 1.1rem; }
+    .cta-box p { color: rgba(255,255,255,0.8); margin-bottom: 20px; font-size: 0.95rem; }
+    .cta-box a { display: inline-block; background: #E8A020; color: #0C1B33; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+    .article-tag-hero { display: inline-block; background: rgba(232,160,32,0.15); color: #E8A020; border: 1px solid rgba(232,160,32,0.3); padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 20px; }
+    .nav { background: #fff; border-bottom: 1px solid #E8E9ED; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    .logo { font-weight: 700; font-size: 1.2rem; color: #0C1B33; }
+    .logo span { color: #E8A020; }
+    .nav-links { display: flex; list-style: none; gap: 32px; }
+    .nav-links a { text-decoration: none; color: #3a4257; font-weight: 500; font-size: 0.95rem; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .footer { background: #0C1B33; color: rgba(255,255,255,0.85); padding: 64px 0 32px; }
+    .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { margin: 12px 0; font-size: 0.95rem; line-height: 1.6; }
+    .footer-highlight { background: rgba(232,160,32,0.15); padding: 12px; border-radius: 8px; border-left: 2px solid #E8A020; }
+    .footer-links h4 { color: #E8A020; font-weight: 700; margin-bottom: 16px; }
+    .footer-links ul { list-style: none; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 32px; text-align: center; font-size: 0.9rem; }
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .nav-links { gap: 16px; }
+    }
+  </style>
+<link rel="canonical" href="https://neet2028.org/neet-physics-alternating-current.html">
+<meta property="og:title" content="Alternating Current for NEET: RMS Values and Circuit Analysis">
+<meta property="og:description" content="Master AC circuits, RMS values, and impedance for NEET Physics. NCERT-grounded strategies with common mistakes and exam patterns.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://neet2028.org/neet-physics-alternating-current.html">
+<meta property="og:site_name" content="NEET2028">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Alternating Current for NEET: RMS Values and Circuit Analysis">
+<meta name="twitter:description" content="Master AC circuits, RMS values, and impedance for NEET Physics. NCERT-grounded strategies with common mistakes and exam patterns.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Alternating Current for NEET: RMS Values and Circuit Analysis", "description": "Master AC circuits, RMS values, and impedance for NEET Physics. NCERT-grounded strategies with common mistakes and exam patterns.", "datePublished": "2026-10-18", "dateModified": "2026-10-18", "author": {"@type": "Organization", "name": "NEET2028"}, "publisher": {"@type": "Organization", "name": "NEET2028"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://neet2028.org/neet-physics-alternating-current.html"}, "articleSection": "Physics"}</script>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">NEET<span>Success</span></a>
+      <ul class="nav-links">
+        <li><a href="/strategy.html">Strategy</a></li>
+        <li><a href="/motivation.html">Mindset</a></li>
+        <li><a href="https://neet.padhle.in">Best Coaching</a></li>
+        <li><a href="/resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="article-hero">
+    <div class="container">
+      <div class="article-tag-hero">Physics · NEET Guide</div>
+      <h1>Alternating Current for NEET: RMS Values and Circuit Analysis</h1>
+      <div class="article-meta">
+        <span>By <a href="https://neet.padhle.in" style="color:#E8A020;text-decoration:none;font-weight:600;">Rohan Verma</a></span>
+        <span>·</span>
+        <span>📅 October 18, 2026</span>
+        <span>·</span>
+        <span>⏱ 12 min read</span>
+        <span>·</span>
+        <span>🎯 NEET Physics</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="article-body">
+    <p>Alternating Current (AC) circuits account for 3–4 marks in NEET, but the concepts underlying RMS values, impedance, and power factor trap hundreds of students every year. Many aspirants memorize formulas without understanding why the RMS value is 1/√2 times the peak value, or they confuse reactance with resistance. NCERT Chapter 7 (Alternating Current) is deceptively deep—it's not just about plugging numbers into equations. In this guide, we'll break down exactly what examiners test, the mistakes that cost marks, and the mental models that separate toppers from the rest.</p>
+
+    <h2>Understanding RMS Values: The Foundation You've Been Missing</h2>
+    <p>Peak voltage (V₀) and peak current (I₀) tell only part of the story in AC circuits. An alternating current that oscillates between +10A and -10A isn't the same as a steady 10A DC current in terms of power delivery. This is where RMS (Root Mean Square) comes in—it's the equivalent DC value that delivers the same power to a resistor.</p>
+    <p>Here's what NEET textbooks often gloss over: RMS values exist because power dissipation in a resistor depends on I². When AC current swings from positive to negative, the average over a complete cycle is zero—but the average of I² is not zero. The RMS value is mathematically defined as the square root of the mean of the squares over one complete cycle, which gives V_rms = V₀/√2 and I_rms = I₀/√2.</p>
+
+    <div class="highlight-box">
+      <strong>Critical Exam Mistake:</strong>
+      <p>Students often use peak values directly in power calculations (P = V₀I₀) and get marks deducted. Always use RMS values for AC power calculations: P = V_rms × I_rms × cos(φ). Forgetting the power factor (cos φ) costs another full mark in circuits with inductance or capacitance.</p>
+    </div>
+
+    <p>In NEET, you'll typically see questions asking for RMS voltage across a resistor, RMS current in a circuit, or RMS power dissipation. The formula V_rms = V₀/√2 ≈ 0.707 V₀ is non-negotiable. Practice converting between peak and RMS values until it's automatic—this appears in 1–2 questions per exam.</p>
+
+    <h2>Impedance in AC Circuits: Resistance Meets Reactance</h2>
+    <p>In DC circuits, only resistance matters. In AC circuits, inductors and capacitors introduce reactance—opposition to current flow that doesn't dissipate energy as heat. Understanding impedance Z is crucial because it replaces "R" in Ohm's law for AC: V_rms = I_rms × Z.</p>
+    <p>For a resistor, impedance Z = R. For an inductor, impedance Z = ωL = 2πfL, where ω is angular frequency and f is frequency in Hz. For a capacitor, impedance Z = 1/(ωC). In series RLC circuits (the most common NEET scenario), the total impedance is Z = √[R² + (X_L - X_C)²], where X_L is inductive reactance and X_C is capacitive reactance.</p>
+    <p>The resonance frequency (where X_L = X_C and impedance is minimum) occurs at f₀ = 1/(2π√LC). At resonance, current reaches its maximum value, I_max = V_rms/R. This is a high-frequency exam concept that appears in 1–2 NEET questions annually. Many students confuse resonance frequency with cutoff frequency and lose easy marks.</p>
+
+    <h2>Phase Relationships and Power Factor: Why Angle Matters</h2>
+    <p>When you add a pure inductor or capacitor to a resistive circuit, the voltage and current are no longer in phase. This phase angle φ (phi) determines the power factor cos(φ), which directly affects real power dissipation. Power factor = cos(φ) = R/Z in an RLC circuit.</p>
+    <p>Here's the distinction that examiners love testing: apparent power (S) in volt-amperes is different from real power (P) in watts. A circuit with high reactance can have large S but small P because cos(φ) is low. Real power P = V_rms × I_rms × cos(φ) is what actually dissipates energy as heat. Reactive power Q = V_rms × I_rms × sin(φ) circulates between the source and reactive components but doesn't dissipate.</p>
+
+    <div class="highlight-box">
+      <strong>Topper's Trick:</strong>
+      <p>Draw phasor diagrams. For series RLC circuits, plot R along the real axis, (X_L - X_C) along the imaginary axis, and Z as the hypotenuse. This visual instantly gives you Z = √[R² + (X_L - X_C)²] and tan(φ) = (X_L - X_C)/R. Phasor diagrams appear in 1–2 NEET circuits annually and save massive time.</p>
+    </div>
+
+    <h2>Circuit Analysis: The NEET-Specific Patterns</h2>
+    <p>NEET typically tests AC circuits through 2–3 direct questions and 1–2 indirect applications. Here are the exact scenarios:</p>
+    <ul>
+      <li><strong>Pure resistive circuits:</strong> Current and voltage in phase. Z = R. Power = V_rms²/R or I_rms² × R (no power factor needed).</li>
+      <li><strong>Series RL circuit:</strong> Current lags voltage by φ = tan⁻¹(ωL/R). Impedance Z = √(R² + (ωL)²). This is tested 1–2 times per exam.</li>
+      <li><strong>Series RC circuit:</strong> Current leads voltage by φ = tan⁻¹(1/(ωRC)). Impedance Z = √(R² + (1/ωC)²). Less common than RL, but watch for it.</li>
+      <li><strong>Resonant RLC circuit:</strong> At resonance, φ = 0, current is maximum, and impedance is minimum (Z = R). Frequency f₀ = 1/(2π√LC) is a memory-heavy concept examiners exploit.</li>
+    </ul>
+    <p>A typical NEET question might read: "An AC source of 110V, 50 Hz is connected to a resistor and inductor in series. The current is 2A and lags the voltage by 30°. Find the resistance and inductance." To solve: cos(30°) = R/Z and sin(30°) = ωL/Z, so Z = V_rms/I_rms = 110/2 = 55Ω. Then R = 55 × cos(30°) ≈ 47.6Ω, and ωL = 55 × sin(30°) = 27.5, so L = 27.5/(2π × 50) ≈ 0.088 H. This type of question rewards systematic phasor analysis and costs marks if you skip steps.</p>
+
+    <h2>Common Mistakes That Kill Marks</h2>
+    <p>Beyond the highlight-box mistakes, watch for these exam-room disasters:</p>
+    <ul>
+      <li><strong>Using peak values instead of RMS:</strong> The problem states "110
